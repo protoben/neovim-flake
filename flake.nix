@@ -240,6 +240,12 @@
       url = "github:weirongxu/plantuml-previewer.vim";
       flake = false;
     };
+
+    # OpenAI support
+    ai = {
+      url = "github:aduros/ai.nvim";
+      flake = false;
+    };
   };
 
   outputs = {
