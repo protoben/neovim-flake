@@ -13,7 +13,7 @@ in {
       enable = mkOption {
         type = types.bool;
         default = false;
-        description = "enable OpenAI support through ai.nvim";
+        description = "enable OpenAI support through ai.vim";
       };
     };
   };

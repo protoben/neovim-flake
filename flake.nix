@@ -243,7 +243,7 @@
 
     # OpenAI support
     ai = {
-      url = "github:aduros/ai.nvim";
+      url = "github:aduros/ai.vim";
       flake = false;
     };
   };

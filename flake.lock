@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "ai": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1679353018,
+        "narHash": "sha256-fpyvjrTBGi22qcRmCgeRMvafbGa0F2t71mZCXj4SKtw=",
+        "owner": "aduros",
+        "repo": "ai.vim",
+        "rev": "03e5f7ee4a34208148e3d51521dfcf9c674e82f9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aduros",
+        "repo": "ai.vim",
+        "type": "github"
+      }
+    },
     "bufdelete-nvim": {
       "flake": false,
       "locked": {
@@ -740,6 +756,7 @@
     },
     "root": {
       "inputs": {
+        "ai": "ai",
         "bufdelete-nvim": "bufdelete-nvim",
         "catppuccin": "catppuccin",
         "cmp-buffer": "cmp-buffer",
