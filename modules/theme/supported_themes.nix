@@ -33,6 +33,16 @@
 
   moonfly = {
     setup = { style ? "" }: ''
+      vim.g.moonflyWinSeparator = 2;
+      vim.opt.fillchars = {
+        horiz = '━',
+        horizup = '┻',
+        horizdown = '┳',
+        vert = '┃',
+        vertleft = '┫',
+        vertright = '┣',
+        verthoriz = '╋',
+      }
       vim.cmd.colorscheme "moonfly";
     '';
     styles = [];
