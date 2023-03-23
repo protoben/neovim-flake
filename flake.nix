@@ -178,6 +178,11 @@
       flake = false;
     };
 
+    moonfly = {
+      url = "github:bluz71/vim-moonfly-colors";
+      flake = false;
+    };
+
     # Rust crates
     crates-nvim = {
       url = "github:Saecki/crates.nvim";

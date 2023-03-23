@@ -44,6 +44,7 @@ with lib; let
     "plantuml-syntax"
     "plantuml-previewer"
     "ai"
+    "moonfly"
   ];
 
   pluginsType = with types; listOf (nullOr (either (enum availablePlugins) package));
