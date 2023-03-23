@@ -128,6 +128,12 @@ in {
       default = true;
       description = "New splits will open to the right";
     };
+
+    homekeyMovement = mkOption {
+      type = types.bool;
+      default = false;
+      description = "Use 'j', 'k', 'l', ';' for movement to keep fingers on home keys";
+    };
   };
 
   config = {
@@ -147,7 +153,30 @@ in {
       "<right>" = "<nop>";
     };
 
-    vim.nnoremap = mkIf cfg.mapLeaderSpace {"<space>" = "<nop>";};
+    vim.nnoremap =
+      mkIf cfg.mapLeaderSpace {
+        "<space>" = "<nop>";
+      }
+      // mkIf cfg.homekeyMovement {
+        ";" = "l";
+        "l" = "k";
+        "k" = "j";
+        "j" = "h";
+      };
+
+    vim.vnoremap = mkIf cfg.homekeyMovement {
+      ";" = "l";
+      "l" = "k";
+      "k" = "j";
+      "j" = "h";
+    };
+
+    vim.onoremap = mkIf cfg.homekeyMovement {
+      ";" = "l";
+      "l" = "k";
+      "k" = "j";
+      "j" = "h";
+    };
 
     vim.configRC.basic = nvim.dag.entryAfter ["globalsScript"] ''
       " Settings that are set for everything
