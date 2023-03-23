@@ -30,4 +30,10 @@
     '';
     styles = [ "latte" "frappe" "macchiato" "mocha" ];
   };
+
+  moonfly = {
+    setup = {}: ''
+      vim.cmd.colorscheme "moonfly";
+    '';
+  };
 }
