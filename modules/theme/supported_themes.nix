@@ -32,8 +32,9 @@
   };
 
   moonfly = {
-    setup = {}: ''
+    setup = { style ? "" }: ''
       vim.cmd.colorscheme "moonfly";
     '';
+    styles = [];
   };
 }
