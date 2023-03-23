@@ -288,6 +288,22 @@
         "type": "github"
       }
     },
+    "moonfly": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1678421083,
+        "narHash": "sha256-T4FH/ZMezCbwgz00whP25H20gWzo67zcBh9pv6FcFIw=",
+        "owner": "bluz71",
+        "repo": "vim-moonfly-colors",
+        "rev": "b2000bf399f9de69d55ce9aafbcbd598142dd141",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bluz71",
+        "repo": "vim-moonfly-colors",
+        "type": "github"
+      }
+    },
     "naersk": {
       "inputs": {
         "nixpkgs": [
@@ -757,6 +773,7 @@
         "lspkind": "lspkind",
         "lspsaga": "lspsaga",
         "lualine": "lualine",
+        "moonfly": "moonfly",
         "nil": "nil",
         "nixpkgs": "nixpkgs",
         "nmd": "nmd",
